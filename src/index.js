@@ -1,5 +1,6 @@
-const shows = document.getElementById('show');
-const template = document.getElementById('results').content;
+//Variables
+const shows = document.getElementById('shows');
+const template = document.getElementById('showTemplate').content;
 const fragment = document.createDocumentFragment();
 
 //Escuchar evento de la barra de búsuqueda (asíncrona)
@@ -29,11 +30,26 @@ document.addEventListener('keypress', async e => {
                     shows.innerHTML = `<p>No hay resultados que coincidan con tu búsqueda, inténtalo de nuevo.</p>`
                 } else {
                     json.forEach(element => {
+                        //Buscar etiqueta para crear un hijo dentro con la información
                         template.querySelector('h3').textContent = element.name;
+                        template.querySelector('img').src = element.flag;
+                        template.querySelector('p.capital').textContent = 'Capital: ' + element.capital;
+                        template.querySelector('p.region').textContent = 'Región: ' + element.region;
+                        template.querySelector('p.limits').textContent = 'Países limítrofes: ' + element.borders;
+                        template.querySelector('p.languages').textContent = 'Lengua: ' + element.languages[0].nativeName;
+                        template.querySelector('p.currencies').textContent = 'Moneda: ' + element.currencies[0].name;
+                        template.querySelector('p.symbol').textContent = 'Símbolo: ' + element.currencies[0].symbol;
+
+
+                        //Crear clon del nodo
+                        let cloneTemplate = document.importNode(template, true);
+                        fragment.appendChild(cloneTemplate);
                     });
+                    //Limpiar
+                    shows.innerHTML = '';
+                    //Agregar nodo hijo a shows
+                    shows.appendChild(fragment);
                 }
-
-
 
             } catch (err) {
                 console.log(err);

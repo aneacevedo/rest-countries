@@ -9,14 +9,22 @@
 </head>
 
 <body>
-    <h1 class="title">Busca</h1>
-    <input type="search" id="searchBar" class="search-bar" placeholder="Busca tu país" autocomplete="off"></input>
-    <!-- <section id="results"> -->
-    <div id="show">
-        <h3 id="country"></h3>
-        <div></div>
-    </div>
-    <!-- </section> -->
+    <h1 class="title">Buscador de países</h1>
+    <input type="search" id="searchBar" class="search-bar" placeholder="Encuentra tu país" autocomplete="off"></input>
+    <section id="shows"></section>
+    <template id="showTemplate">
+            <article class="show">
+                <h3 id="myTitle"></h3>
+                <img class="foto">
+                <p class="capital"></p>
+                <p class="region"></p>
+                <p class="limits"></p>
+                <p class="languages"></p>
+                <p class="currencies"></p>
+                <p class="symbol"></p>
+    </article>
+    </template>
+
 
 </body>
 <script src='index.js' type='module'></script>
