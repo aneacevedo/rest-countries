@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    font-family: 'Roboto', sans-serif;
+}
+
+.title {
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #4a4646;
+    align-self: center;
+    text-shadow: 3px 8px 14px 0 #a2a0a0;
+    font-weight: normal;
+}
+
+.search-bar {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    color: #4a4646;
+    /* border-radius: 5px; */
+    width: 50vw;
+    height: 8vh;
+    font-size: 3vw;
+    padding-left: 1rem;
+    font-weight: 200;
+    margin-top: 2%;
+    border: none;
+    border-bottom: 1px solid #a2a0a0;
+}
+
+.search-bar:focus {
+    outline: none!important;
+}
+
+.second-container {
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    color: #4a4646;
+}
+
+.cardTemplate {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.show {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-self: center;
+    box-shadow: 3px 8px 14px 0 #a2a0a0;
+    border-radius: 5px;
+    width: 50vw;
+    margin: 5%;
+    padding: 3%;
+    font-size: 2.5vw;
+}
+
+.foto {
+    display: flex;
+    width: 30vw;
+    align-self: center;
+    justify-content: center;
+    margin: 3%;
+}
