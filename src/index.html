@@ -8,13 +8,13 @@
     <title>Buscador de países</title>
 </head>
 
-<body>
+<body class="first-container">
     <div class="container">
         <h1 class="title">Buscador de países</h1>
-        <img src="/img/city.png" alt="city" class="city-image">
         <input type="search" id="searchBar" class="search-bar" placeholder="Encuentra tu país" autocomplete="off"></input>
-        <section id="shows" class="card"></section>
-        <template id="showTemplate" class="cardTemplate">
+        <div class="second-container">
+            <section id="shows" class="card"></section>
+            <template id="showTemplate" class="cardTemplate">
             <article class="show">
                 <h3 id="myTitle"></h3>
                 <img class="foto">
@@ -26,6 +26,7 @@
                 <p class="symbol"></p>
     </article>
     </template>
+        </div>
     </div>
 </body>
 <script src='index.js' type='module'></script>
