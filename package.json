@@ -1,0 +1,24 @@
+{
+  "name": "rest-countries",
+  "version": "1.0.0",
+  "description": "Landing page de búsqueda de países.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aneacevedo/rest-countries.git"
+  },
+  "keywords": [
+    "javascript",
+    "api",
+    "apiRest"
+  ],
+  "author": "Anelisse Acevedo S.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aneacevedo/rest-countries/issues"
+  },
+  "homepage": "https://github.com/aneacevedo/rest-countries#readme"
+}
